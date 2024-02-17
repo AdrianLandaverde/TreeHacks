@@ -100,3 +100,7 @@ async def restaurants(address: str):
 
     return {'names': results, 'main_map': main_map, 'static_map': link}
 
+@app.get("/route_map")
+async def route_map(origin: str, destination: str, mode: str):
+    link= f"""https://www.google.com/maps/embed/v1/directions?key={api_key}&origin={origin}&destination={destination}&mode={mode.lower()}"""
+    return link
