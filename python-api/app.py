@@ -7,8 +7,6 @@ import chromadb
 from chromadb.utils import embedding_functions
 from openai import OpenAI
 
-os.environ['GOOGLE_API_KEY'] = "AIzaSyC05F4Ld4Crlfos7Q4eRRFmMgLZ2m4Kq1w"
-os.environ['OPENAI_API_KEY'] = "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"
 
 api_key= os.getenv('GOOGLE_API_KEY')
 openaikey= os.getenv('OPENAI_API_KEY')
